@@ -1,0 +1,23 @@
+h1{
+    color: #bb2c7b;
+    font-size: 16px;
+    font-family: sans-serif;
+    text-decoration: underline;
+    font-style: italic;
+    width: 800px;
+}
+p{
+    font-size: 16px;
+    font-family: sans-serif;
+    line-height: 1;
+    width: 800px;
+}
+td{
+    font-size: 16px;
+    font-family: sans-serif;
+    width: 200px;
+}
+h2{
+    border-bottom: 2px dashed #bb2c7b;
+    width: 800px;
+}
