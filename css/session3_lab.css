@@ -1,0 +1,82 @@
+body{
+    background-image: url("../images/session3_lab_anh2.jpg");
+    background-size: cover;
+}
+#one{
+    color: #56595b;
+    background-color: #b8c1ca;
+    width: 1000px;
+    height: 170px;
+    margin: auto;
+    box-sizing: border-box;
+
+
+    padding-top: 22px;
+    padding-right: 10px;
+    padding-left: 300px;
+    padding-bottom: 10px;
+
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+#name{
+    font-size: 56px;
+    letter-spacing: 3px;
+    margin: 3px;
+}
+#occupation{
+    font-size: 20px;
+    font-weight: lighter;
+    margin: 10px;
+}
+img{
+    width: 200px;
+}
+#two{
+    color: #56595b;
+    background-color: rgb(220, 217, 217);
+    width: 250px;
+    height: 1000px;
+    box-sizing: border-box;
+    margin-top: -160px;
+    margin-left: calc((100% - 1000px) / 2 + 25px);
+    padding: 25px;
+
+    font-family: sans-serif;
+
+    position: relative;
+
+}
+#three{
+    color: #56595b;
+    background-color: #eeeeee;
+
+    width: 1000px;
+    height: 900px;
+    box-sizing: border-box;
+    margin: auto;
+    margin-top: -862px;
+    box-sizing: border-box;
+
+    padding-top: 30px;
+    padding-left: 300px;
+    padding-right: 25px;
+
+    font-family: sans-serif;
+    text-align: justify;
+}
+h1{
+    font-size: 24px;
+    text-transform: uppercase;
+}
+h2{
+    font-size: 18px;
+    text-transform: uppercase;
+
+}
+.underline{
+    border-bottom: 1px solid #56595b;
+}
+.education{
+    margin-top: -0.8em;
+}
