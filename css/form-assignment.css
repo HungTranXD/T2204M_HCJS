@@ -1,0 +1,76 @@
+form{
+    width: 60%;
+    margin: 30px auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 30px;
+    box-shadow: 3px 3px 10px black;
+
+    font-family: sans-serif;
+    font-size: 20px;
+    color: #3c3d3e;
+
+    overflow: hidden;
+}
+ul{
+    float: left;
+    width: 100%;
+    list-style-type: none;
+}
+li{
+    width: calc(50% - 15px);
+    float: left;
+}
+li.left{
+    margin-right: 30px;
+}
+.small-text{
+    font-size: 18px;
+    padding: 5px 20px 0;
+    color: #898989;
+}
+.small-label{
+    font-size: 18px;
+    color: #898989;
+}
+input, select{
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-style: none;
+    border-bottom: 1px solid black;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: #e0e0e0;
+}
+select:invalid{
+    color: gray;
+}
+select[name='opportunity']{
+    color: gray;
+}
+option{
+    color: #3c3d3e;
+}
+.different{
+    width: auto;
+    margin-top: 20px;
+}
+label{
+    display: block;
+}
+.line-container{
+    margin: 20px 0;
+    overflow: hidden;
+}
+button{
+    font-family: sans-serif;
+    font-size: 20px;
+    color: #3c3d3e;
+    padding: 5px 15px;
+    margin: auto;
+    display: block;
+}
+
+
+

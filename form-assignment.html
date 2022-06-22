@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Assignment</title>
+    <link rel="stylesheet" href="css/demo_layout.css"/>
+    <link rel="stylesheet" href="css/form-assignment.css"/>
+</head>
+<body>
+    <section class="section main">
+        <div class="container">
+            <form method="get" action="#">
+                <div class="line-container">Create task</div>
+                <div class="line-container">
+                    <input required name="type" type="text" placeholder="Type"/>
+                </div>
+                <div class="line-container">
+                    <ul>
+                        <li class="left">
+                            <select required name="company">
+                                <option value="" disabled selected hidden>Company</option>
+                                <option value="company-a">Company A</option>
+                                <option value="company-b">Company B</option>
+                                <option value="company-c">Company C</option>
+                            </select>
+                        </li>
+                        <li>
+                            <div>
+                                <select name="opportunity" onchange="">
+                                    <option value="" disabled selected hidden>Opportunity</option>
+                                    <option value="opportunity-a">Opportunity A</option>
+                                    <option value="opportunity-b">Opportunity B</option>
+                                    <option value="opportunity-c">Opportunity C</option>
+                                </select>
+                            </div>
+                            <div class="small-text">Optional</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="line-container">
+                    <input required name="task-name" type="text" placeholder="Task name"/>
+                </div>
+                <div class="line-container">
+                    <div><input name="cc" type="email" multiple placeholder="CC"/></div>
+                    <div class="small-text">Optional</div>
+                </div>
+                <div class="line-container">
+                    <ul>
+                        <li class="left">
+                            <label class="small-label">Nature of request</label>
+                            <label><input class="different" name="nature-reques" type="checkbox"> Ads review</label>
+                            <label><input class="different" name="nature-reques" type="checkbox"> Keyworlds review</label>
+                            <label><input class="different" name="nature-reques" type="checkbox"> Extensions review</label>
+                        </li>
+                        <li>
+                            <label class="small-label">Current reviewable status</label>
+                            <label><input required class="different" name="current-reviewable-status" type="radio"/> Approved</label>
+                            <label><input required class="different" name="current-reviewable-status" type="radio"/> Not approved</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="line-container">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
