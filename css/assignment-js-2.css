@@ -1,0 +1,64 @@
+/* ---------------- LAYOUT CHUNG ---------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    line-height: 1.25;
+    font-family: Arial;
+}
+img{
+    max-width: 100%;
+}
+.section{
+    float: left;
+    width: 100%;
+}
+.container{
+    max-width: 700px;
+}
+/* ------------ HẾT LAYOUT CHUNG ------------ */
+.row{
+    box-shadow: 2px 2px 10px black;
+    margin-top: 25%;
+    align-items: center;
+}
+.col{
+    display: flex;
+    justify-content: space-between;
+}
+#temp{
+    text-align: center;
+    font-size: 56px;
+    line-height: 0.7;
+    margin-top: 30px;
+}
+#unit{
+    text-align: center;
+    line-height: 0.9;
+    margin-top: 30px;
+}
+#unit span{
+    color: #73777c;
+}
+#prec{
+    margin-top: 27px;
+}
+#prec, #hum, #wind{
+    text-align: left;
+    font-size: 14px;
+    color: #73777c;
+}
+#locat, #date, #desc{
+    text-align: right;
+}
+#locat{
+    font-size: 25px;
+    font-weight: bold;
+}
+#date, #desc{
+    font-size: 16px;
+    color: #73777c;
+}
+
