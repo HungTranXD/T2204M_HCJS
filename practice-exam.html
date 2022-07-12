@@ -28,33 +28,45 @@
                 </div>
             </div>
             <div class="form-container">
-                <form>
-                    <div class="name">
-                        <label>Name on Card</label>
-                        <input name="name" type="text" placeholder="John Smith">
+                <form class="row g-3 needs-validation" novalidate>
+                    <div class="col-12">
+                        <label for="validationCustom01" class="form-label">Name of card</label>
+                        <input name="name" type="text" class="form-control" id="validationCustom01" placeholder="John Smith" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
                     </div>
-                    <div class="card-number">
-                        <label>Card Number</label>
-                        <input name="cardnumber" type="number" placeholder="•••• •••• •••• ••••">
+                    <div class="col-6">
+                        <label for="validationCustom02" class="form-label">Card number</label>
+                        <input name="card-number" type="number" class="form-control" id="validationCustom02" placeholder="•••• •••• •••• ••••" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid card number.
+                        </div>
                     </div>
-                    <div class="cvv">
-                        <label>CVC</label>
-                        <input name="cvc" type="number" placeholder="•••">
+                    <div class="col-6">
+                        <label for="validationCustom03" class="form-label">CVV</label>
+                        <input name="cvv" type="number" class="form-control" id="validationCustom03" placeholder="•••" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid cvv.
+                        </div>
                     </div>
-                    <div class="exp">
-                        <label>Expiration Date</label>
-                        <input name="experationdate" type="text" placeholder="MM/YY">
+                    <div class="col-12">
+                        <label for="validationCustom04" class="form-label">Expiration Date</label>
+                        <input name="exp-date" type="text" class="form-control" id="validationCustom04" placeholder="MM/YY" required>
+                        <div class="valid-feedback">
+                            Please provide a valid date.
+                        </div>
                     </div>
-                    <button type="submit">
-                        Make A Payment
-                    </button>
+                    <div class="col-12" style="margin-top: 20px">
+                        <button class="btn btn-primary" type="submit">Make A Payment</button>
+                    </div>
                 </form>
             </div>
         </div>
+
+
+
     </section>
-
-
-
 
     <script type="text/javascript">
         // Example starter JavaScript for disabling form submissions if there are invalid fields

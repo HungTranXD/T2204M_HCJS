@@ -82,35 +82,10 @@ img{
     display: flex;
     justify-content: center;
 }
-form > div {
-    margin: 10px 0;
+form{
+    width: 450px;
 }
-.name label, .exp label{
-    display: block;
-}
-input{
-    padding: 5px;
-}
-.name input, .exp input{
-    width: 100%;
-}
-.card-number{
-    display: inline-block;
-    margin-right: 20px;
-}
-.card-number label{
-    display: block;
-}
-.cvv{
-    display: inline-block;
-}
-.cvv label{
-    display: block;
-}
-.exp{
-    margin-bottom: 20px;
-}
-button{
+button.btn.btn-primary{
     background: red;
     color: white;
     font-size: 18px;
@@ -118,4 +93,5 @@ button{
     padding: 3px 8px;
     border: none;
 }
+
 
