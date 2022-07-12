@@ -1,0 +1,121 @@
+/* -- LAYOUT HUNG -- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1.25;
+}
+img{
+    max-width: 100%;
+}
+.container{
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/* -- HẾT LAYOUT CHUNG -- */
+.checkout-form{
+    width: 500px;
+
+    background-color: #ffea00;
+    padding: 20px 30px;
+    text-align: center;
+    position: relative;
+}
+.title{
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+    color: grey;
+    letter-spacing: 2px;
+}
+.title i{
+    color: black;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.total-pay{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 26px;
+    letter-spacing: 3px;
+    padding: 30px 0 50px;
+}
+.total-pay .number{
+    font-size: 40px;
+}
+.total-pay .number span{
+    font-size: 20px;
+}
+.logo{
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50%);
+
+    display: flex;
+    justify-content: center;
+}
+.visa-logo, .paypal-logo{
+    flex-basis: 35%;
+    padding: 5px 40px;
+    background-color: white;
+    border: 1px solid lightgray;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    margin-right: 30px;
+}
+.logo:last-child{
+    margin-right: 0;
+}
+
+.form-container{
+    width: 100%;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+form > div {
+    margin: 10px 0;
+}
+.name label, .exp label{
+    display: block;
+}
+input{
+    padding: 5px;
+}
+.name input, .exp input{
+    width: 100%;
+}
+.card-number{
+    display: inline-block;
+    margin-right: 20px;
+}
+.card-number label{
+    display: block;
+}
+.cvv{
+    display: inline-block;
+}
+.cvv label{
+    display: block;
+}
+.exp{
+    margin-bottom: 20px;
+}
+button{
+    background: red;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding: 3px 8px;
+    border: none;
+}
+

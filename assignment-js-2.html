@@ -24,7 +24,7 @@
                     </div>
                 </div>
                 <div class="col-6">
-                    <div id="locat">Ha Noi</div>
+                    <div id="locat"></div>
                     <div id="date">Tuesday 11:00</div>
                     <div id="desc">Mostly sunny</div>
                 </div>
@@ -36,15 +36,20 @@
     <script type="text/javascript">
         // Binding data
         $.ajax({
-            url:"https://api.openweathermap.org/data/2.5/weather?q=Hanoi,vietnam&appid=09a71427c59d38d6a34f89b47d75975c&units=metric",
+            url:"https://api.openweathermap.org/data/2.5/weather",
             method:"get",
+            data:{
+                q: "London",
+                appid: "09a71427c59d38d6a34f89b47d75975c",
+                units: "metric"
+            },
             success: function (data){
                 $("#img").html('<img src="https://openweathermap.org/img/wn/'+data.weather[0].icon+'@2x.png"/>');
                 $("#temp").text(data.main.temp);
                 $("#hum").html("Humidity: " + data.main.humidity + "%");
                 $("#wind").html("Wind: " + data.wind.speed + "km/h");
-                $("locat").html(data.name);
-                $("desc").html(data.weather[0].description);
+                $("#locat").text(data.name);
+                $("#desc").html(data.weather[0].description);
             }
         })
     </script>
